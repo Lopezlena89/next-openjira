@@ -9,26 +9,7 @@ export interface EntriesState{
      entries:Entry[],
 }
 const Entries_INITIAL_STATE:EntriesState ={
-     entries:[
-          {
-               _id: uuidv4(),
-               description:'Pendiente: No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.',
-               status:'pending',
-               createdAt:Date.now(),
-          },
-          {
-               _id: uuidv4(),
-               description:'In - Progress: Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
-               status:'in-progress',
-               createdAt:Date.now() - 1000000,
-          },
-          {
-               _id: uuidv4(),
-               description:'Terminadas: Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. ',
-               status:'finished',
-               createdAt:Date.now() - 100000
-          },
-     ],
+     entries:[],
 }
 
 export const EntriesProvider:FC = ({children}) =>{
