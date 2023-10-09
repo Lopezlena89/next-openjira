@@ -14,8 +14,6 @@ export function middleware(req: NextRequest) {
             return NextResponse.rewrite(url);
         }
     }
-
-
 //   return NextResponse.next();
 }
  
